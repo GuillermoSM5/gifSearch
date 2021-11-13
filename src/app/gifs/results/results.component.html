@@ -1,0 +1,21 @@
+<!-- <div class="col">
+  <ul>
+    <li *ngFor="let i of resultados">{{ i.title }}</li>
+  </ul>
+</div> -->
+<div class="row">
+  <div *ngFor="let i of resultados" class="col-md-4 col-sm-6">
+    <div class="card">
+      <img
+        [src]="i.images.downsized_medium.url"
+        [alt]="i.title"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-Text">
+          <!-- {{ i.images.downsized_medium.url }} -->
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
