@@ -4,6 +4,7 @@
   <div class="list-group list-reset">
     <a
       href="#"
+      (click)="buscar(gif)"
       class="list-group-item list-group-item-action"
       *ngFor="let gif of arrayGifts"
       >{{ gif | titlecase }}</a
